@@ -140,7 +140,6 @@
         padding: 0;
         height: 0.6rem;
         overflow: hidden;
-        border-bottom: 1px solid #3d414c;
         position: fixed;
         top: 1.2rem;
         background: #0a0b0d00;
@@ -154,6 +153,7 @@
     .schedule:hover {
         height: 4rem;
         background: #0a0b0dee;
+        border-bottom: 1px solid #3d414c;
     }
     
     .schedule__week {
