@@ -30,7 +30,7 @@
     
     .playtab__gamelist,.bet-widget__list {
         grid-gap: 0.6rem;
-        margin-top: 1rem !important;
+        margin-top: 1rem;
         max-width: 98%;
         grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
         justify-content: center;
@@ -50,7 +50,7 @@
     }
     
     .ticker {
-        padding: 0.1rem !important;
+        padding: 0.1rem;
         position: fixed;
         background: #0a0b0d;
         z-index: 100;
@@ -76,9 +76,8 @@
         line-height: 1.1rem;
     }
     
-    
     .game-widget__centered {
-        margin-top: 10px !important;
+        margin-top: 10px;
     }
     
     .game-widget__status {
@@ -93,8 +92,8 @@
     
     .navigation {
         padding: 0;
-        width: 10px !important;
-        overflow: hidden !important;
+        width: 10px;
+        overflow: hidden;
         position: fixed;
         background: #0a0b0d;
         z-index: 50;
@@ -109,7 +108,7 @@
     }
     
     .navigation:hover {
-        width: clamp(10rem,12rem,20rem) !important;
+        width: clamp(10rem,12rem,20rem);
         background: #0a0b0dee;
     }
     
@@ -118,7 +117,6 @@
     }
     
     .navigation__link {
-        
         gap: 0.2rem;
     }
     
@@ -127,16 +125,15 @@
     }  
     
     .user-header__choices__fav-team {
-        
         align-items: center;
         gap: 0.3rem;
     }
     
     .schedule {
-  margin-bottom: 0 !important;
+        margin-bottom: 0;
         padding: 0;
-        height: 0.6rem !important;
-        overflow: hidden !important;
+        height: 0.6rem;
+        overflow: hidden;
         border-bottom: 1px solid #3d414c;
         position: fixed;
         top: 1.2rem;
@@ -144,7 +141,7 @@
     }
     
     .schedule:hover {
-        height: 4rem!important;
+        height: 4rem;
         background: #0a0b0dee;
     }
     
@@ -158,8 +155,7 @@
     }
     
     .shared__glass-container {
-        
-        border-radius: 0 !important;
+        border-radius: 0;
         background: #0b0c0e;
         width: 100%;
     }
