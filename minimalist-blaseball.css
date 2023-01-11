@@ -95,7 +95,12 @@
         width: 10px;
         overflow: hidden;
         position: fixed;
-        background: #0a0b0d;
+        background: #0a0b0d00;
+        background-image: url(https://raw.githubusercontent.com/winterhazelly/minimalist-blaseball/main/caret-right.svg);
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        background-position: center;
+        border: none;
         z-index: 50;
     }
     
@@ -110,6 +115,7 @@
     .navigation:hover {
         width: clamp(10rem,12rem,20rem);
         background: #0a0b0dee;
+        border-right: 1px solid #3d414c;
     }
     
     .navigation__block:hover {
@@ -137,7 +143,12 @@
         border-bottom: 1px solid #3d414c;
         position: fixed;
         top: 1.2rem;
-        background: #0a0b0d;
+        background: #0a0b0d00;
+        background-image: url(https://raw.githubusercontent.com/winterhazelly/minimalist-blaseball/main/caret-down.svg);
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+        background-position: center;
+        border: none;
     }
     
     .schedule:hover {
