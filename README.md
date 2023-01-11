@@ -9,6 +9,8 @@ Hi, I made a simple style to look at blaseball games easier. It has:
  
  This was designed to use on a half-screen so it's pretty compact, but is responsive so it'll look nice on a full screen zoomed in too.
  
+ [Install with Stylus here.](https://github.com/winterhazelly/minimalist-blaseball/raw/main/minimalist-blaseball.user.css)
+ 
  For bug reports and suggestions, winterhazelly#8709 in SIBR or Crabitat.
  
  [Preview here.](https://raw.githubusercontent.com/winterhazelly/minimalist-blaseball/main/minimalist-blaseball-preview.png)
