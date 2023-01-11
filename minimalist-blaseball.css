@@ -6,7 +6,7 @@
 @author         Levi @winterhazelly
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.blaseball.com/") {
+@-moz-document domain("blaseball.com") {
     
     html {
         background: #0a0b0d;
