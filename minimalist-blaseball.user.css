@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minimalist Blaseball
 @namespace      github.com/winterhazelly/minimalist-blaseball
-@version        1.0.3
+@version        1.0.4
 @description    Reduced spacing between and around everything, collapsing sidebar and schedule, no gradients. Other minor aesthetic changes.
 @author         Levi @winterhazelly
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     }
     
     .main__contents {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
     
     .TeamLayout .TeamLogo {
@@ -27,6 +27,10 @@
     
     .SegmentedControl {
         gap: 0.5rem;
+    }
+    
+    .bet-widget__form {
+        margin-top: 1rem;
     }
     
     .SectionHeader {
@@ -62,19 +66,81 @@
     }
     
     .playtab,.League-DivisionCard {
-        padding: 0.5rem;
+        padding: 1rem 0.5rem;
         margin: auto;
         display: block;
     }
     
     .decree__frame {
+        max-width: 80%;
+        max-height: 16rem;
+    }
+    
+    
+    .decree__name--right {
+        align-items: flex-start;
+        bottom: 10%;
+        right: -2rem;
+        text-shadow: 0px 0px 5px #000;
+    }
+    
+    
+    .decree__name--left {
+        top: 10%;
+        left: 4rem;
+        text-shadow: 0px 0px 5px #000;
+    }
+    
+    .decree__name--left > svg {
+        transform: scaleX(-1);    
+    }
+    
+    .decree {
+        flex-shrink: 1;
+        margin: 0;
+    }
+    
+    
+    .decree__name {
+        font-size: 1.2rem;
+    }
+    
+    .decree__options {
         max-width: 100%;
+        flex-flow: wrap;
+        justify-content: center;
+        margin: 1rem;
+        opacity: 0;
+    }
+    
+    #decrees {
+        height: 5rem;
+        overflow: hidden;
+                background-image: url(https://raw.githubusercontent.com/winterhazelly/minimalist-blaseball/main/caret-down.svg);
+        background-repeat: no-repeat;
+        background-size: auto 40%;
+        background-position: 50% 100%;
+    }
+    
+    #decrees:hover {
+        height: auto;   
+        background: none;
+    }
+    
+    #decrees:hover > div {
+        opacity: 100%;
+    }
+    
+    
+    .elections__button {
+        background: #0a0b0d;
     }
     
     .blessing {
-        flex-grow: 0;
-        flex-basis: 0;
+        flex-grow: 1;
+        flex-basis: 10%;
         border-radius: 0;
+        padding: 0.5rem
     }
     
     .blessing__group {
@@ -83,9 +149,22 @@
         gap: 0.5rem;
     }
     
+    .elections__header {
+        text-align: center;
+    }
+    
+    .election-modal__title,.submit-votes__description--decree,.submit-votes__totals {
+        background: #14161a;
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+    }
+    
+    .referendum-vote__filter {
+        display: none;
+    }
+    
     .playtab__gamelist,.bet-widget__list {
         grid-gap: 0.6rem;
-        margin-top: 1rem;
         max-width: 98%;
         grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
         justify-content: center;
