@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minimalist Blaseball
 @namespace      github.com/winterhazelly/minimalist-blaseball
-@version        1.0.2
+@version        1.0.3
 @description    Reduced spacing between and around everything, collapsing sidebar and schedule, no gradients. Other minor aesthetic changes.
 @author         Levi @winterhazelly
 ==/UserStyle== */
@@ -16,9 +16,48 @@
         margin-top: 1rem;
     }
     
+    .TeamLayout .TeamLogo {
+        height: 3rem;
+    }
+    
+    
+    .TeamLayout .TeamLogo > img {
+        scale: 1.2 !important;
+    }
+    
+    .SegmentedControl {
+        gap: 0.5rem;
+    }
+    
+    .SectionHeader {
+        padding: 0.5rem;    
+        gap: 0.5rem;
+    }
+    
+    .TwoLineStack {
+        grid-template-columns: 2fr 1fr;
+        flex-shrink: 1;
+    }
+    
+    .StatTableHeader {
+        margin: .25rem;
+    }
+    
+    .PostFeed-Body {
+        width: clamp(20rem,40rem,100%);
+    }
+    
+    .PostFeed-Header {
+        margin-bottom: 1rem;
+    }
+    
+    .Post {
+        padding: 0.5rem;
+    }
+    
     .League-Standings {
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit,minmax(18rem,45%));
+        gap: 0.5rem;
+        grid-template-columns: repeat(auto-fit,minmax(max(20rem,45%),1fr));
         justify-content: center;
     }
     
@@ -28,11 +67,27 @@
         display: block;
     }
     
+    .decree__frame {
+        max-width: 100%;
+    }
+    
+    .blessing {
+        flex-grow: 0;
+        flex-basis: 0;
+        border-radius: 0;
+    }
+    
+    .blessing__group {
+        flex-basis: 0;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
     .playtab__gamelist,.bet-widget__list {
         grid-gap: 0.6rem;
         margin-top: 1rem;
         max-width: 98%;
-        grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
         justify-content: center;
     }
     
