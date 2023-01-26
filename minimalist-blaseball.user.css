@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Minimalist Blaseball
 @namespace      github.com/winterhazelly/minimalist-blaseball
-@version        1.0.4
+@version        1.0.5
 @description    Reduced spacing between and around everything, collapsing sidebar and schedule, no gradients. Other minor aesthetic changes.
 @author         Levi @winterhazelly
 ==/UserStyle== */
@@ -10,6 +10,7 @@
     
     html {
         background: #0a0b0d;
+        font-feature-settings: "ss03";
     }
     
     .main__contents {
@@ -114,7 +115,7 @@
     }
     
     #decrees {
-        height: 5rem;
+        height: 6rem;
         overflow: hidden;
                 background-image: url(https://raw.githubusercontent.com/winterhazelly/minimalist-blaseball/main/caret-down.svg);
         background-repeat: no-repeat;
@@ -131,6 +132,9 @@
         opacity: 100%;
     }
     
+    .elections {
+        padding: 0 1rem;
+    }
     
     .elections__button {
         background: #0a0b0d;
@@ -173,6 +177,10 @@
     .playtab__cover,.playtab__cover-ctas,.RankTeamValues,
     .League-DivisionCard-ListItem,.WinLossValues {    
         gap: 1rem;
+    }
+    
+    .game-header {
+        gap: 0rem;
     }
     
     .game-header__matchup {
